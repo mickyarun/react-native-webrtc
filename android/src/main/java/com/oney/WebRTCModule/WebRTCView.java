@@ -526,6 +526,7 @@ public class WebRTCView extends ViewGroup {
      * this {@code WebRTCView} or {@code null}.
      */
     void setStreamURL(String streamURL) {
+        System.out.println("$$$ set streamurl");
         // Is the value of this.streamURL really changing?
         if (!Objects.equals(streamURL, this.streamURL)) {
             // XXX The value of this.streamURL is really changing. Before
@@ -653,6 +654,7 @@ public class WebRTCView extends ViewGroup {
     }
 
     public void handleTakeSnapshot(@Nullable ReadableMap snapshotOption) {
+        System.out.println("$$$handle take snapshot triggerred");
         // --- should we check this.streamURL and this.videoTrack are not null? not is controled at js side.
         if (snapshotOption == null) {
             // --- do nothing

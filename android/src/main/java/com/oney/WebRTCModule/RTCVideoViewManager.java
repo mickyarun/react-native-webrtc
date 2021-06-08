@@ -83,6 +83,7 @@ public class RTCVideoViewManager extends SimpleViewManager<WebRTCView> {
    */
   @ReactProp(name = "snapshotOption")
   public void handleTakeSnapshot(WebRTCView view, @Nullable ReadableMap snapshotOption) {
+    System.out.println("$$$in handle screenshot");
     view.handleTakeSnapshot(snapshotOption);
   }
 }
